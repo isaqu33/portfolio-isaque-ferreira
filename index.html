@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Isaque Ferreira de Sousa — desenvolvimento web com React, Next.js, TypeScript e Node.js. Conheça projetos, experiência e formas de contato.">
+  <meta name="theme-color" content="#152b32">
+  <title>Isaque Ferreira de Sousa · Desenvolvimento web</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    (() => {
+      let theme;
+      try { theme = localStorage.getItem("portfolio-theme"); } catch {}
+      document.documentElement.dataset.theme = theme === "dark" || theme === "light"
+        ? theme
+        : matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=soccer-telas">
+  <script src="conteudo.js?v=cuepoint-repositorio" defer></script>
+  <script src="script.js?v=tema-escuro" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Isaque Ferreira, início"><span class="brand-mark" aria-hidden="true">if<span>.</span></span><span>Isaque Ferreira<small>DESENVOLVIMENTO WEB</small></span></a>
+      <nav aria-label="Navegação principal">
+        <a href="#projetos">Projetos</a><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a class="nav-contact" href="#contato">Vamos conversar <span aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" type="button" aria-pressed="false" hidden>
+          <span class="theme-icon" aria-hidden="true">☾</span> Modo escuro
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero container" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-line"></span> PORTFÓLIO · ISAQUE FERREIRA DE SOUSA</p>
+        <h1 id="hero-title">Da interface<br>à integração.<br><em>Web que faz sentido.</em></h1>
+        <p class="hero-description">Desenvolvimento Full Stack com atenção ao problema, à experiência de uso e aos detalhes de cada entrega.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#projetos">Explorar projetos <span aria-hidden="true">↘</span></a><a class="text-link" href="#contato">Conversar sobre uma ideia <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-stack">React <span>·</span> Next.js <span>·</span> TypeScript <span>·</span> Node.js <span>·</span> MongoDB <span>·</span> Docker</p>
+        <p class="hero-ai">Desenvolvimento com apoio de IA · GPT & Claude</p>
+      </div>
+      <div class="hero-art interactive-art" role="img" aria-label="Monograma if de Isaque Ferreira, com ponto verde e movimento interativo">
+        <div class="art-top"><span>UM OLHAR DE PONTA A PONTA</span><span aria-hidden="true">↗</span></div>
+        <svg class="organic-art identity-art" viewBox="-240 -240 480 480" aria-hidden="true" focusable="false">
+          <defs>
+            <radialGradient id="identity-light"><stop stop-color="#d5f077" stop-opacity=".35"/><stop offset="1" stop-color="#d5f077" stop-opacity="0"/></radialGradient>
+          </defs>
+          <circle r="215" fill="url(#identity-light)"/>
+          <g class="organic-follow">
+            <g class="organic-spin">
+              <rect class="identity-frame" x="-153" y="-153" width="306" height="306" rx="2" fill="none" stroke="#152b32" stroke-opacity=".12"/>
+              <path d="M-153 -115v-38h38 M115 153h38v-38" fill="none" stroke="#73894b" stroke-width="2"/>
+              <text x="-18" y="60" text-anchor="middle" fill="#152b32" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="202" letter-spacing="-23">if<tspan fill="#73894b">.</tspan></text>
+              <path d="M-102 103H76" fill="none" stroke="#152b32" stroke-opacity=".18"/>
+              <text x="0" y="129" text-anchor="middle" fill="#56676b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="8" letter-spacing="2.5">ISAQUE FERREIRA</text>
+            </g>
+          </g>
+        </svg>
+        <div class="art-bottom"><span>INTERFACE · APLICAÇÃO · DADOS</span><span class="art-dot" aria-hidden="true"></span></div>
+        <span class="art-hint" aria-hidden="true">MOVA O CURSOR PARA EXPLORAR</span>
+      </div>
+    </section>
+
+    <div class="principles-strip"><div class="container"><span>Interfaces claras</span><span aria-hidden="true">✳</span><span>Integrações úteis</span><span aria-hidden="true">✳</span><span>Escopo bem definido</span><span aria-hidden="true">✳</span><span>Atenção à entrega</span></div></div>
+
+    <section class="section container" id="projetos" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / PROJETOS SELECIONADOS</p><h2 id="projects-title">Código com<br><em>contexto.</em></h2></div><p>Aplicações, demonstrações e desafios técnicos. Cada case apresenta os fluxos implementados, as escolhas e o escopo do trabalho.</p></div>
+      <div class="project-list">
+        <article class="project-row" data-project="custeio">
+          <div class="project-visual visual-links" data-cover="custeio">
+            <span class="visual-label">PRODUTO EM DESENVOLVIMENTO</span>
+            <div class="project-type-art new-project-art" aria-hidden="true"><span>±</span><strong>Custeio<i>.</i></strong></div>
+            <span class="visual-caption">PDV · Estoque · Custo por venda</span>
+          </div>
+          <div class="project-info">
+            <p class="project-category">01 — PRODUTO FULL STACK EM DESENVOLVIMENTO</p>
+            <h3>Custeio.</h3>
+            <p>Gestão de custos e estoque para restaurantes. O sistema conecta pedidos do PDV, fichas técnicas e notas de compra para registrar movimentações e calcular custo e margem por venda.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>Next.js</li><li>TypeScript</li><li>MongoDB</li><li>Redis · Bull</li><li>Docker</li></ul>
+            <div class="project-actions">
+              <button class="text-link case-trigger" data-open-project="custeio">Ver projeto e mídias <span aria-hidden="true">↗</span></button>
+              <button class="text-link case-trigger" data-open-project="custeio" data-case-view="technical">Decisões técnicas <span aria-hidden="true">↗</span></button>
+              <a class="text-link" href="https://www.usecusteio.com.br/" target="_blank" rel="noopener noreferrer">Conhecer o produto <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+        <article class="project-row" data-project="cuepoint">
+          <div class="project-visual visual-places" data-cover="cuepoint">
+            <span class="visual-label">BIBLIOTECA DE MÍDIA</span>
+            <div class="project-type-art new-project-art" aria-hidden="true"><span>↗</span><strong>Cuepoint<i>.</i></strong></div>
+            <span class="visual-caption">Envio · Processamento · Revisão</span>
+          </div>
+          <div class="project-info">
+            <p class="project-category">02 — APLICAÇÃO FULL STACK · PROCESSAMENTO DE MÍDIA</p>
+            <h3>Cuepoint.</h3>
+            <p>Uma biblioteca para áudio e vídeo, com envio em lote, processamento em segundo plano e revisão de transcrições. Acompanhe o progresso, recupere falhas e compartilhe por links temporários.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>SvelteKit</li><li>PostgreSQL</li><li>Redis · Bull</li><li>FFmpeg · Whisper</li><li>Docker</li></ul>
+            <div class="project-actions">
+              <button class="text-link case-trigger" data-open-project="cuepoint">Ver projeto e mídias <span aria-hidden="true">↗</span></button>
+              <button class="text-link case-trigger" data-open-project="cuepoint" data-case-view="technical">Decisões técnicas <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-row" data-project="kairoz">
+          <div class="project-visual visual-kairoz" data-cover="kairoz">
+            <span class="visual-label">ESTÚDIO DE MÍDIA</span>
+            <div class="project-type-art new-project-art" aria-hidden="true"><span>↗</span><strong>Kairoz<i>.</i></strong></div>
+            <span class="visual-caption">Extensão · Biblioteca · Vídeo</span>
+          </div>
+          <div class="project-info">
+            <p class="project-category">03 — APLICAÇÃO FULL STACK · REPOSITÓRIO PRIVADO</p>
+            <h3>Kairoz Media Studio.</h3>
+            <p>Organize criativos por cliente, ajuste imagens e vídeos para vários formatos e exporte em lote. A extensão do Chrome envia mídias compatíveis do Instagram direto à biblioteca.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>Next.js</li><li>TypeScript</li><li>MongoDB</li><li>FFmpeg</li></ul>
+            <div class="project-actions">
+              <button class="text-link case-trigger" data-open-project="kairoz">Ver projeto e mídias <span aria-hidden="true">↗</span></button>
+              <button class="text-link case-trigger" data-open-project="kairoz" data-case-view="technical">Decisões técnicas <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-row" data-project="agregador-links">
+          <div class="project-visual visual-links" data-cover="agregador-links">
+            <span class="visual-label">APLICAÇÃO FULL STACK</span>
+            <div class="project-type-art" aria-hidden="true"><span class="big-link">↗</span><span class="link-line">links<span class="art-accent">.</span></span></div>
+            <span class="visual-caption">Organização · Perfil · Personalização</span>
+          </div>
+          <div class="project-info">
+            <p class="project-category">04 — APLICAÇÃO FULL STACK</p>
+            <h3>FaceLink.</h3>
+            <p>Monte uma página pública com seus links, personalize a aparência com prévia no celular e acompanhe visitas e cliques em tempo real.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>Next.js</li><li>NestJS</li><li>MongoDB</li><li>Redis · SSE</li></ul>
+            <div class="project-actions">
+              <button class="text-link case-trigger" data-open-project="agregador-links">Ver projeto e mídias <span aria-hidden="true">↗</span></button>
+              <button class="text-link case-trigger" data-open-project="agregador-links" data-case-view="technical">Decisões técnicas <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-row" data-project="realtimechat">
+          <div class="project-visual visual-places" data-cover="realtimechat">
+            <span class="visual-label">CHAT FULL STACK</span>
+            <div class="project-type-art new-project-art" aria-hidden="true"><span>↔</span><strong>Chat<i>.</i></strong></div>
+            <span class="visual-caption">Mensagens · Presença · Histórico</span>
+          </div>
+          <div class="project-info">
+            <p class="project-category">05 — PROJETO DEMONSTRATIVO · TEMPO REAL</p>
+            <h3>Conversas em<br>tempo real.</h3>
+            <p>Chat privado com mensagens em tempo real, presença em múltiplas abas, confirmação de leitura e histórico paginado.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>SvelteKit</li><li>Express</li><li>Socket.IO</li><li>Prisma · SQLite</li><li>Docker</li></ul>
+            <div class="project-actions">
+              <button class="text-link case-trigger" data-open-project="realtimechat">Ver projeto e mídias <span aria-hidden="true">↗</span></button>
+              <button class="text-link case-trigger" data-open-project="realtimechat" data-case-view="technical">Decisões técnicas <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-row" data-project="clima-cep">
+          <div class="project-visual visual-weather" data-cover="clima-cep"><span class="visual-label">INTERFACE + APIS</span><div class="project-type-art weather-art" aria-hidden="true"><span class="sun-symbol">☀</span><span class="weather-word">Dados em<br>movimento<span>.</span></span></div><span class="visual-caption">Clima · CEP · Formulário</span></div>
+          <div class="project-info">
+            <p class="project-category">06 — DESAFIO TÉCNICO · PLIN</p>
+            <h3>Informação externa.<br>Experiência integrada.</h3>
+            <p>Consulte clima, previsão e qualidade do ar, explore o mapa meteorológico e encontre endereços pelo CEP.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>TanStack Query</li><li>Leaflet</li></ul>
+            <div class="project-actions">
+              <button class="text-link case-trigger" data-open-project="clima-cep">Ver projeto e mídias <span aria-hidden="true">↗</span></button>
+              <button class="text-link case-trigger" data-open-project="clima-cep" data-case-view="technical">Decisões técnicas <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="project-row" data-project="meutime">
+          <div class="project-visual visual-weather" data-cover="meutime">
+            <span class="visual-label">PAINEL DE FUTEBOL</span>
+            <div class="project-type-art new-project-art" aria-hidden="true"><span>↗</span><strong>Soccer-Mania<i>.</i></strong></div>
+            <span class="visual-caption">Times · Jogadores · Partidas</span>
+          </div>
+          <div class="project-info">
+            <p class="project-category">07 — PROJETO DE ESTUDO · SOCCER-MANIA</p>
+            <h3>Futebol em<br>uma interface.</h3>
+            <p>Painel de futebol para explorar partidas, classificações, times e jogadores com dados da API-Sports.</p>
+            <ul class="tags" aria-label="Tecnologias"><li>Next.js</li><li>TypeScript</li><li>Chakra UI</li><li>React Query</li></ul>
+            <div class="project-actions">
+              <button class="text-link case-trigger" data-open-project="meutime">Ver projeto e mídias <span aria-hidden="true">↗</span></button>
+              <button class="text-link case-trigger" data-open-project="meutime" data-case-view="technical">Decisões técnicas <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="project-note">Abra os cases para ver os fluxos, as escolhas técnicas e as capturas ou vídeos disponíveis.</p>
+      <noscript><p>Veja os repositórios no <a href="https://github.com/isaqu33">GitHub de Isaque</a>. Ative JavaScript para abrir os detalhes dos projetos nesta página.</p></noscript>
+    </section>
+
+    <section class="expertise-section" id="atuacao" aria-labelledby="expertise-title"><div class="container section">
+      <div class="section-heading"><div><p class="eyebrow">02 / ÁREAS DE ATUAÇÃO</p><h2 id="expertise-title">Olhar técnico.<br><em>Problemas concretos.</em></h2></div><p>Da melhoria de uma tela à conexão com um serviço externo, o ponto de partida é entender o que precisa funcionar melhor.</p></div>
+      <div class="expertise-grid">
+        <article><span class="expertise-number">/ 01</span><h3>Interfaces &<br>experiência de uso</h3><p>Páginas, formulários e fluxos responsivos com React e Next.js. Atenção aos estados da interface e à organização dos componentes.</p></article>
+        <article><span class="expertise-number">/ 02</span><h3>APIs &<br>integrações</h3><p>Serviços com Node.js, integração com APIs e persistência em bancos relacionais e MongoDB. Conexões que dão continuidade ao fluxo de uma aplicação.</p></article>
+        <article><span class="expertise-number">/ 03</span><h3>Manutenção &<br>evolução</h3><p>Correções e novas funcionalidades em sistemas existentes. Demandas delimitadas, com contexto e critérios claros de conclusão.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section container about-section" id="sobre" aria-labelledby="about-title">
+      <div><p class="eyebrow">03 / SOBRE MIM</p><h2 id="about-title">Isaque Ferreira<br><em>de Sousa.</em></h2><span class="about-caption">DESENVOLVEDOR FULL STACK · BRASIL</span>
+        <figure class="about-portrait">
+          <img src="assets/perfil/isaque-retrato-editorial-v1.jpg" alt="Retrato de Isaque Ferreira de Sousa, com camiseta azul-petróleo e fundo claro" width="768" height="960" loading="lazy" decoding="async">
+          <span class="portrait-mark" aria-hidden="true">if<span>.</span></span>
+        </figure>
+      </div>
+      <div class="about-copy"><p class="lead">Gosto de entender como as partes se conectam — e de transformar esse entendimento em aplicações web.</p><p>Minha trajetória reúne manutenção de sites e CMS, desenvolvimento de interfaces, APIs e participação em equipes de software.</p><p>Atuei com manutenção e suporte em CMS pela 3P Systems, desenvolvimento e testes em uma plataforma de radiologia na RPACS e desenvolvimento Full Stack com foco em front-end na IRIS DATA TECHNOLOGY.</p><p>Também trabalho com MongoDB e Docker. Atualmente, desenvolvo com apoio de inteligência artificial, utilizando GPT e Claude como ferramentas no processo de desenvolvimento.</p><p>Neste portfólio, compartilho uma parte dessa trajetória por meio de projetos que podem ser explorados no código e em seus respectivos contextos.</p><a class="text-link" href="https://www.linkedin.com/in/isaque-ferreira-de-sousa-700902181/" target="_blank" rel="noopener noreferrer">Conhecer minha trajetória <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="contact-section" id="contato" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">04 / CONTATO</p><h2 id="contact-title">Uma boa conversa<br>é um <em>bom começo.</em></h2><p>Quer trocar uma ideia sobre tecnologia ou conversar sobre uma demanda web? Vamos conectar os pontos.</p></div><div class="contact-links"><a href="https://wa.me/5561981482674" target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp <span aria-hidden="true">↗</span><small>+55 (61) 98148-2674</small></a><a class="contact-email" href="mailto:isaqueferreiradesousa@gmail.com">Enviar um e-mail <span aria-hidden="true">↗</span><small>isaqueferreiradesousa@gmail.com</small></a><a href="https://www.linkedin.com/in/isaque-ferreira-de-sousa-700902181/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/isaqu33" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>© <span id="year">2026</span> Isaque Ferreira de Sousa</p><p>Construindo, aprendendo e conectando.</p><a href="#inicio">Voltar ao início ↑</a></div></footer>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">POR DENTRO DO PROJETO</span><button class="dialog-close" aria-label="Fechar detalhes do projeto">Fechar <span aria-hidden="true">×</span></button></div><div id="dialog-content"></div></dialog>
+</body>
+</html>
